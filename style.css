@@ -10,6 +10,19 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/Roboto-Regular-webfont.eot');
+    src: url('fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 .right{
 	float: right;
 }
@@ -22,6 +35,8 @@
 	background: linear-gradient(270deg, #2980b9, #6200b2);
 	background-size: 400% 400%;
 	box-shadow: 0px 10px 10px #888888;
+	position:relative;
+	z-index: 101;
 	-webkit-animation: Skyworksheader 14s ease infinite;
 	-moz-animation: Skyworksheader 14s ease infinite;
 	animation: Skyworksheader 14s ease infinite;
@@ -37,16 +52,28 @@
 .landingimage img{
 	max-width: 100%;
 	max-height: 100%;
+	z-index: 100;
+	position:relative;
 }
 
 .navigationitems ul{
 	list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-top: 38px;
 }
 .navigationitems ul li{
-	display: inline;
-	font-family: 'exoregular';
+	display: inline-block;
+    text-align: center;
+}
+.navigationitems ul li a{
+	padding-top: 28px;
+	padding-bottom: 20px;
+	padding-right: 10px;
+	font-family: 'robotoregular';
+	font-size: 18px;
+	margin: 10px;
+	text-align: bottom;
+	color: white;
 }
 
 @-webkit-keyframes Skyworksheader {
