@@ -18,6 +18,15 @@
 .left {
     float: left;
 }
+
+hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+
 .mainnav {
     height: 100px;
     background: linear-gradient(270deg, #2980b9, #6200b2);
@@ -60,15 +69,15 @@
     color: white;
 }
 .mainbody {
-    height: 500px;
     padding: 10px;
 }
 .contentbox {
      background-color:#FFFFFF;
-     height: 300px;
+     height: 800px;
      box-shadow: 5px 10px 20px #888888;
-
 }
+
+/* Responsive CSS accordian experiment */
 
 
 
